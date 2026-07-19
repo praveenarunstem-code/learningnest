@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img
+          src="assets/logo-nest.png"
+          alt="Learning Nest Logo"
+          class="logo-img"
+        />
+
+        <h1 class="logo-text">Learning Nest</h1>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html">SignUp</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="signup-hero">
+      <h2>Sign Up for Learning Nest</h2>
+      <p>
+        Register your child for our beginner-friendly Coding and Robotics 6-Week
+        Class. Classes are designed for students in grades 3–6.
+      </p>
+    </section>
+
+    <section class="signup-section">
+      <form
+        class="signup-form"
+        id="signupForm"
+        name="signup"
+        method="POST"
+        data-netlify="true"
+      >
+        <!-- ADD THIS HIDDEN FIELD -->
+        <input type="hidden" name="form-name" value="signup" />
+        <h3>Course Registration</h3>
+
+        <label for="course">Course Name</label>
+        <input
+          type="text"
+          id="course"
+          name="course"
+          value="Coding and Robotics 6-Week Class"
+          readonly
+        />
+
+        <label for="studentName">Student Name*</label>
+        <input type="text" id="studentName" name="studentName" required />
+
+        <label for="studentGrade">Student Grade*</label>
+        <select id="studentGrade" name="studentGrade" required>
+          <option value="">Select Grade</option>
+          <option value="3rd Grade">3rd Grade</option>
+          <option value="4th Grade">4th Grade</option>
+          <option value="5th Grade">5th Grade</option>
+          <option value="6th Grade">6th Grade</option>
+        </select>
+
+        <label for="parentName">Parent/Guardian Name*</label>
+        <input type="text" id="parentName" name="parentName" required />
+
+        <label for="parentEmail">Parent Email*</label>
+        <input type="email" id="parentEmail" name="parentEmail" required />
+
+        <label for="parentPhone">Parent Phone Number Optional</label>
+        <input type="tel" id="parentPhone" name="parentPhone" />
+
+        <label for="classSchedule">Available Location & Session*</label>
+        <select id="classSchedule" name="classSchedule" required>
+          <option value="">Select a Session</option>
+          <option value="Prosper Public Library (Saturday Morning - 11:00 AM)">
+            Prosper Public Library (Morning — 11:00 AM)
+          </option>
+          <option value="Frisco Public Library (Saturday Afternoon - 3:00 PM)">
+            Frisco Public Library (Afternoon — 3:00 PM)
+          </option>
+        </select>
+        <label for="notes">Additional Notes Optional</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <p class="form-note">
+          A parent or guardian will be contacted to confirm class timing,
+          availability, and program details.
+        </p>
+
+        <button type="submit" class="submit-btn">Submit Registration</button>
+      </form>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <img src="assets/clock-icon.png" alt="Clock Icon" width="50" />
+
+        <h3>Weekly Learning</h3>
+
+        <p>Students learn through consistent weekend STEM sessions.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/lightbulb-icon.png" alt="Lightbulb Icon" width="50" />
+
+        <h3>Beginner Friendly</h3>
+
+        <p>Lessons are simple, clear, and designed for young learners.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/robot-icon.png" alt="Robot Icon" width="50" />
+
+        <h3>Hands-On Fun</h3>
+
+        <p>
+          Activities include coding, robotics, engineering, and creative
+          problem-solving.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2026 Learning Nest. All Rights Reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

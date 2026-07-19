@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Learning Nest</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo-container">
+        <img
+          src="assets/logo-nest.png"
+          alt="Learning Nest Logo"
+          class="logo-img"
+        />
+
+        <h1 class="logo-text">Learning Nest</h1>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html">SignUp</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="page-hero">
+      <h2>Contact Learning Nest</h2>
+      <p>
+        Have a question about classes, registration, or volunteering? Send us a
+        message.
+      </p>
+    </section>
+
+    <!-- FIXED SECTION CLASS -->
+    <section class="contact-section">
+      <div class="contact-form-card">
+        <h3>Send a Message</h3>
+
+        <!-- FIXED FORM TAG AND CLOSING BRACKET -->
+        <form
+          class="contact-form"
+          id="contactForm"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <!-- HIDDEN FIELD FOR NETLIFY -->
+          <input type="hidden" name="form-name" value="contact" />
+
+          <label for="name">Parent/Guardian Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number Optional</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="reason">Reason for Contact</label>
+          <select id="reason" name="reason" required>
+            <option value="">Select a reason</option>
+            <option value="Class Registration">Class Registration</option>
+            <option value="Class Schedule">Class Schedule</option>
+            <option value="Volunteering">Volunteering</option>
+            <option value="General Question">General Question</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <p class="form-note">
+            For student safety, all communication should be completed by a
+            parent or guardian.
+          </p>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info-card">
+        <h3>Program Information</h3>
+        <p><strong>Program:</strong> Coding and Robotics 6-Week Class</p>
+        <p><strong>Grades:</strong> 3rd–6th Grade</p>
+        <p><strong>Format:</strong> Weekend STEM sessions</p>
+        <p>
+          <strong>Locations:</strong> Prosper Public Library & Frisco Public Library
+        </p>
+        <p>
+          <strong>Response:</strong> We will respond after reviewing your
+          message.
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <img src="assets/clock-icon.png" alt="Clock Icon" width="50" />
+
+        <h3>Consistent</h3>
+
+        <p>Classes every week.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/lightbulb-icon.png" alt="Lightbulb Icon" width="50" />
+
+        <h3>Easy</h3>
+
+        <p>Built to help students learn with ease.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/robot-icon.png" alt="Robot Icon" width="50" />
+
+        <h3>Fun</h3>
+
+        <p>Keeps the learning environment engaging and fun.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Learning Nest. All Rights Reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
